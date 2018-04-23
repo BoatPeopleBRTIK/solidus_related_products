@@ -29,8 +29,8 @@
           <td><%= relation_type.applies_to %></td>
           <td><%= relation_type.description %></td>
           <td class="actions" data-hook="admin_relation_types_index_row_actions">
-            <%= link_to_edit relation_type, no_text: true %>
-            <%= link_to_delete relation_type, no_text: true %>
+            <%= link_to_edit relation_type, no_text: true, url: edit_admin_relation_type_path(relation_type.id) %>
+            <%= link_to_delete relation_type, no_text: true, url: admin_relation_type_path(relation_type.id) %>
           </td>
         </tr>
       <% end %>
